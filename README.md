@@ -18,7 +18,7 @@ OpenZeppelin v5 – Secure, audited ERC standards
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_HANDLE/fracture-point-flow.git
+git clone https://github.com/SUPAMAN-dev/fracture-point-flow.git
 cd fracture-point-flow
 cp .env.example .env  0x9262844fa5405062c2050b859b979430483b1b18ff3c62425f76bc7010bb382a
 npm install
