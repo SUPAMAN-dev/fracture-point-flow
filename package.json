@@ -1,0 +1,23 @@
+{
+  "name": "fracture-point-flow",
+  "version": "1.0.0",
+  "description": "A competitive Web3 extraction shooter that rewards **skill, creativity, and community contribution** through an on‑chain `ProofOfPlay` XP token.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.5.0",
+    "hardhat": "^2.24.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.3.0"
+  }
+}
