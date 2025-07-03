@@ -1,17 +1,47 @@
 {
-	"networks": {
-		"emulator": "127.0.0.1:3569",
-		"mainnet": "access.mainnet.nodes.onflow.org:9000",
-		"testing": "127.0.0.1:3569",
-		"testnet": "access.devnet.nodes.onflow.org:9000"
-	},
-	"accounts": {
-		"emulator-account": {
-			"address": "f8d6e0586b0a20c7",
-			"key": {
-				"type": "file",
-				"location": "emulator-account.pkey"
-			}
-		}
-	}
+  "contracts": {
+    "FPToken": "./cadence/contracts/FPToken.cdc",
+    "RankBadge": "./cadence/contracts/RankBadge.cdc",
+    "ClaimManager": "./cadence/contracts/ClaimManager.cdc"
+  },
+  "networks": {
+    "testnet": {
+      "host": "access.testnet.nodes.onflow.org:9000",
+      "chain_id": "flow-testnet",
+      "contracts": {
+        "FungibleToken": "0x9a0766d93b6608b7",
+        "NonFungibleToken": "0x631e88ae7f1dce20",
+        "MetadataViews": "0x631e88ae7f1dce20"
+      }
+    },
+    "mainnet": {
+      "host": "access.mainnet.nodes.onflow.org:9000",
+      "chain_id": "flow-mainnet"
+    }
+  },
+  "accounts": {
+    "fracture-point-backend": {
+      "address": "0x9e0919634b0ae78e",
+      "keys": "2b58ce5a5be9f15b4e0e50c47c3efc5d0a7fd35da7b66d173cd57adb062bc420"
+    }
+  },
+  "deployments": {
+    "testnet": {
+      "fracture-point-backend": [
+        "FPToken",
+        "RankBadge",
+        "ClaimManager"
+      ]
+    }
+  },
+  "aliases": {
+    "testnet": {
+      "FungibleToken": "0x9a0766d93b6608b7",
+      "NonFungibleToken": "0x631e88ae7f1dce20",
+      "MetadataViews": "0x631e88ae7f1dce20",
+      "FPToken": "0x9e0919634b0ae78e",
+      "RankBadge": "0x9e0919634b0ae78e",
+      "ClaimManager": "0x9e0919634b0ae78e"
+    }
+  }
 }

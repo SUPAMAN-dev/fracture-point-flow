@@ -1,6 +1,8 @@
-import FPToken from "./FPToken.cdc"
-import RankBadge from "./RankBadge.cdc"
-
+import FungibleToken from 0x9a0766d93b6608b7
+import NonFungibleToken from 0x631e88ae7f1dce20
+import FPToken from 0x9e0919634b0ae78e // Your deployed contract
+import RankBadge from 0x9e0919634b0ae78e // Your deployed contract
+ 
 access(all) contract ClaimManager {
 
     access(all) event XPDistributed(to: Address, amount: UFix64, by: Address)

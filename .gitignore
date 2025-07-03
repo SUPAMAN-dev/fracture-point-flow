@@ -3,3 +3,8 @@
 emulator-account.pkey
 imports
 .env
+
+# flow
+emulator-account.pkey
+imports
+.env
